@@ -61,6 +61,7 @@
     "react-query": "^3.39.1",
     "react-router-dom": "^5.3.3",
     "react-stack-grid": "^0.7.1",
+    "react-unity-webgl": "latest",
     "request": "^2.88.2",
     "stream": "^0.0.2",
     "stream-browserify": "^3.0.0",
@@ -69,6 +70,7 @@
     "ts-invariant": "^0.10.3",
     "use-debounce": "^8.0.1",
     "util": "^0.12.4",
+    "web-vitals": "2.1.2",
     "web3modal": "^1.9.8"
   },
   "devDependencies": {
