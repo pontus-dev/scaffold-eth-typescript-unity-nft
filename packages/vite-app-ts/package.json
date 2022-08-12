@@ -39,6 +39,7 @@
     "@uniswap/sdk": "^3.0.3",
     "@uniswap/token-lists": "^1.0.0-beta.28",
     "antd": "^4.21.2",
+    "axios": "^0.27.2",
     "buffer": "^6.0.3",
     "daisyui": "^2.15.3",
     "eth-components": "^3.3.2",

@@ -16,6 +16,7 @@ import { useBurnerFallback } from '~common/components/hooks/useBurnerFallback';
 import { useScaffoldAppProviders } from '~common/components/hooks/useScaffoldAppProviders';
 import { NETWORKS } from '~common/constants';
 import { useScaffoldHooksExamples } from '~~/components/hooks/useScaffoldHooksExamples';
+import { UnityComponent } from '~~/components/unity/UnityComponent';
 import {
   BURNER_FALLBACK_ENABLED,
   CONNECT_TO_BURNER_AUTOMATICALLY,
@@ -141,6 +142,10 @@ export const MainPage: FC = () => {
             mainnetAdaptor={scaffoldAppProviders.mainnetAdaptor}
             blockExplorer={scaffoldAppProviders.targetNetwork.blockExplorer}></GenericContract>
         ),
+      },
+      {
+        name: 'Unity',
+        content: <UnityComponent />,
       },
       {
         name: 'Mainnet-Dai',
