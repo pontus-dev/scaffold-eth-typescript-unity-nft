@@ -1,4 +1,13 @@
-# 🏗 Scaffold-Eth Typescript
+# 🏗 Scaffold-Eth Typescript Unity NFT
+
+## Unity WebGL
+
+This special version of scaffold-eth-typescript has a few things:
+
+1. Hardhat deploy scripts for minting nfts and publishing data on IPFS
+2. regular scaffold-eth react frontend to query the blockchain for your NFT data and also IPFS data.
+3. An integration which sends that data to unity webgl
+4. A Unity scene where you can see the NFTs you own
 
 ## Typescript
 
@@ -11,6 +20,12 @@ packages/next-app-ts/
 ```
 
 ## Quick Start
+
+### Setup pre deploy and launch
+
+1. Get an IPFS infura project from infura.io, copy your project id and api key secret
+2. Create the file `packages/vite-app-ts/.env.local` and override your Infura project ID and api key. You can see the format in `packages/vite-app-ts/.env` (the file you override by creating `packages/vite-app-ts/.env.local`)
+3. Go to `packages/hardhat-ts/deploy/01_deploy_your_NFT.ts` and find the line with the `toAddress` variable. Here you want to put in your wallet address that you have in your browser. If you don't know which wallet address you will get due to using burner wallets or similar. Make a note of launching the app (`yarn start` before `yarn deploy`) once before deploying your NFTs. so you can copy your address from the browser and add it here.
 
 ### Commands to run the app
 
